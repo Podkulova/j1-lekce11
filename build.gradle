@@ -1,0 +1,24 @@
+plugins {
+    id 'application'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+application {
+    mainClass = "cz.czechitas.lekce11.HlavniProgram"
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
